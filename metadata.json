@@ -1,0 +1,6 @@
+{
+  "name": "Code Crafters Services",
+  "description": "Enterprise-grade software engineering, cloud solutions, and IT consulting services for modern businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
