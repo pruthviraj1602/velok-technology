@@ -264,7 +264,7 @@ export default function Contact() {
                       <div className="w-2.5 h-2.5 rounded-full bg-accent-400" />
                     </div>
                     <span className="text-[10px] font-mono text-white/85 bg-slate-950 px-2 py-0.5 mt-1 rounded border border-slate-800">
-                      Code Crafters HQ CA 94103
+                      VELOK HQ CA 94103
                     </span>
                   </div>
                 </div>

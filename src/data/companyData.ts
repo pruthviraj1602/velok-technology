@@ -1,5 +1,9 @@
 import { Service, Project, Testimonial, TeamMember, JobOpening } from '../types';
 
+import shravanImage from '../assets/images/shravan.jpeg';
+import pruthvirajImage from '../assets/images/Pruthvi Pic.jpg';
+import surajImage from '../assets/images/suraj.jpeg';
+import shitalImage from '../assets/images/shital.jpeg';
 
 export const SERVICES_DATA: Service[] = [
   {
@@ -225,20 +229,7 @@ export const TEAM_DATA: TeamMember[] = [
     id: 'tm1',
     name: 'Shravan Jagadannavar',
     designation: 'CEO & Principal Architect',
-    image: '/src/assets/images/shravan.jpeg',
-    bio: 'Marcus has over 15 years of industry tenure designing software networks for financial blue-chips and digital startups. He leads the design team with an obsession for performance and clean code frameworks.',
-    skills: ['Enterprise Systems Design', 'Java Architecture', 'Kubernetes Clusters', 'IT Leadership'],
-    socials: {
-      linkedin: 'https://linkedin.com',
-      twitter: 'https://twitter.com',
-      github: 'https://github.com',
-      email: 'marcus@codecrafters.example.com'
-    }
-  },  {
-    id: 'tm1',
-    name: 'Pruthviraj Patil',
-    designation: 'DEVELOPER & Principal Architect',
-    image: '/src/assets/images/Pruthvi Pic.jpg',
+    image: shravanImage,
     bio: 'Marcus has over 15 years of industry tenure designing software networks for financial blue-chips and digital startups. He leads the design team with an obsession for performance and clean code frameworks.',
     skills: ['Enterprise Systems Design', 'Java Architecture', 'Kubernetes Clusters', 'IT Leadership'],
     socials: {
@@ -248,11 +239,26 @@ export const TEAM_DATA: TeamMember[] = [
       email: 'marcus@codecrafters.example.com'
     }
   },
+  //
+  //{
+  //   id: 'tm1',
+  //   name: 'Pruthviraj Patil',
+  //   designation: 'DEVELOPER & Principal Architect',
+  //   image: pruthvirajImage,
+  //   bio: 'Marcus has over 15 years of industry tenure designing software networks for financial blue-chips and digital startups. He leads the design team with an obsession for performance and clean code frameworks.',
+  //   skills: ['Enterprise Systems Design', 'Java Architecture', 'Kubernetes Clusters', 'IT Leadership'],
+  //   socials: {
+  //     linkedin: 'https://linkedin.com',
+  //     twitter: 'https://twitter.com',
+  //     github: 'https://github.com',
+  //     email: 'marcus@codecrafters.example.com'
+  //   }
+  // },
   {
     id: 'tm2',
     name: 'Suraj Patil',
     designation: 'Manager',
-    image: '/src/assets/images/suraj.jpeg',
+    image: surajImage,
     bio: 'Elena is a leading specialist in modular UI systems and rich data visualizations. She guarantees that every web layout we craft features absolute layout alignment and responsive, fluid design.',
     skills: ['Team Manage', 'Client-meet', 'Framer Motion Design'],
     socials: {
@@ -265,7 +271,7 @@ export const TEAM_DATA: TeamMember[] = [
     id: 'tm3',
     name: 'Shital Patil',
     designation: 'HR',
-    image: "/src/assets/images/shital.jpeg",
+    image: shitalImage,
     bio: 'Siddharth oversees our microservice architecture deployments and database schemas. An authority on Spring Boot and Hibernate mapping, he builds systems prepared for unexpected user traffic swings.',
     skills: ['HR', 'Talent Acquisition', 'Employee Engagement'],
     socials: {

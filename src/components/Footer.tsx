@@ -20,7 +20,7 @@ export default function Footer() {
     { name: 'About Us', path: '/about' },
     { name: 'Our Services', path: '/services' },
     { name: 'Client Work', path: '/portfolio' },
-    { name: 'Join Our Team', path: '/careers' },
+    // { name: 'Join Our Team', path: '/careers' },
     { name: 'Get In Touch', path: '/contact' },
   ];
 
@@ -51,7 +51,7 @@ export default function Footer() {
                 Velok Technology
               </span>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
+            <p className="text-gray-100 text-sm leading-relaxed max-w-sm">
               We engineer beautiful, high-efficiency, enterprise-grade software answers. Our modular digital products drive transaction volume and optimize mission-critical cloud workflows securely.
             </p>
             {/* Social Icons */}
@@ -105,7 +105,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className="group flex items-center text-gray-400 hover:text-white transition-colors duration-200"
+                    className="group flex items-center text-gray-100 hover:text-white transition-colors duration-200"
                   >
                     <ChevronRight className="w-3 h-3 mr-1 text-primary-500/0 group-hover:text-primary-500 group-hover:translate-x-0.5 transition-all duration-200" />
                     <span>{link.name}</span>
@@ -125,7 +125,7 @@ export default function Footer() {
                 <li key={srv.name}>
                   <Link
                     to="/services"
-                    className="group flex items-center text-gray-400 hover:text-white transition-colors duration-200"
+                    className="group flex items-center text-gray-100 hover:text-white transition-colors duration-200"
                   >
                     <ChevronRight className="w-3 h-3 mr-1 text-accent-500/0 group-hover:text-accent-500 group-hover:translate-x-0.5 transition-all duration-200" />
                     <span>{srv.name}</span>
@@ -180,7 +180,7 @@ export default function Footer() {
               </AnimatePresence>
             </form>
 
-            <div className="pt-2 text-xs text-gray-500 space-y-1">
+            <div className="pt-2 text-xs text-gray-100 space-y-1">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-3.5 h-3.5 text-primary-500 shrink-0" />
                 <span>Biruba Mandir, Indraprastha Colony, Peth Vadgoan</span>
@@ -194,7 +194,7 @@ export default function Footer() {
         </div>
 
         {/* Subfooter */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-100">
           <p>© 2026 Velok Technology Inc. All rights reserved.</p>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>

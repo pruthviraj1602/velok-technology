@@ -407,7 +407,7 @@ export default function Home() {
               Our Methodology
             </span>
             <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight text-center">
-              Why Corporate Leaders Choose Code Crafters
+              Why Corporate Leaders Choose Velok Technology
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed text-center">
               Building standard solutions is easy. We focus heavily on the microscopic details of high-stability enterprise execution:
@@ -460,75 +460,75 @@ export default function Home() {
       </section>
 
       {/* SECTION 6: TESTIMONIAL SLIDER */}
-      <section id="testimonials-slider-section" className="py-24 bg-white border-b border-slate-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <span className="font-mono text-xs font-bold text-primary-500 uppercase tracking-widest text-center block mb-4">
-            Partner Feedback
-          </span>
-          <h2 className="text-3xl text-center font-display font-extrabold text-slate-900 tracking-tight mb-16">
-            Trusted by Modern CTOs and Founders
-          </h2>
+      {/*<section id="testimonials-slider-section" className="py-24 bg-white border-b border-slate-100">*/}
+      {/*  <div className="max-w-5xl mx-auto px-4 sm:px-6">*/}
+      {/*    <span className="font-mono text-xs font-bold text-primary-500 uppercase tracking-widest text-center block mb-4">*/}
+      {/*      Partner Feedback*/}
+      {/*    </span>*/}
+      {/*    <h2 className="text-3xl text-center font-display font-extrabold text-slate-900 tracking-tight mb-16">*/}
+      {/*      Trusted by Modern CTOs and Founders*/}
+      {/*    </h2>*/}
 
-          <div className="relative glass-card rounded-3xl p-8 sm:p-12">
-            {/* Absolute quote background icon */}
-            <Quote className="absolute right-8 top-8 w-24 h-24 text-gray-200/50 pointer-events-none" />
+      {/*    <div className="relative glass-card rounded-3xl p-8 sm:p-12">*/}
+      {/*      /!* Absolute quote background icon *!/*/}
+      {/*      <Quote className="absolute right-8 top-8 w-24 h-24 text-gray-200/50 pointer-events-none" />*/}
 
-            <div className="min-h-[180px] flex flex-col justify-between text-left">
-              <div className="space-y-4">
-                {/* Visual rating Stars */}
-                <div className="flex items-center space-x-1">
-                  {[...Array(TESTIMONIALS_DATA[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                {/* Review citation */}
-                <p className="text-slate-700 text-base sm:text-lg italic font-sans leading-relaxed">
-                  "{TESTIMONIALS_DATA[currentTestimonial].content}"
-                </p>
-              </div>
+      {/*      <div className="min-h-[180px] flex flex-col justify-between text-left">*/}
+      {/*        <div className="space-y-4">*/}
+      {/*          /!* Visual rating Stars *!/*/}
+      {/*          <div className="flex items-center space-x-1">*/}
+      {/*            {[...Array(TESTIMONIALS_DATA[currentTestimonial].rating)].map((_, i) => (*/}
+      {/*              <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />*/}
+      {/*            ))}*/}
+      {/*          </div>*/}
+      {/*          /!* Review citation *!/*/}
+      {/*          <p className="text-slate-700 text-base sm:text-lg italic font-sans leading-relaxed">*/}
+      {/*            "{TESTIMONIALS_DATA[currentTestimonial].content}"*/}
+      {/*          </p>*/}
+      {/*        </div>*/}
 
-              {/* Reviewer bio */}
-              <div className="flex items-center space-x-4 pt-8 mt-6 border-t border-slate-150">
-                <img
-                  referrerPolicy="no-referrer"
-                  className="w-12 h-12 rounded-full object-cover border border-slate-200"
-                  src={TESTIMONIALS_DATA[currentTestimonial].image}
-                  alt={TESTIMONIALS_DATA[currentTestimonial].name}
-                />
-                <div>
-                  <h4 className="font-display font-bold text-sm text-slate-900">
-                    {TESTIMONIALS_DATA[currentTestimonial].name}
-                  </h4>
-                  <p className="text-xs text-slate-500 font-sans">
-                    {TESTIMONIALS_DATA[currentTestimonial].role} at{' '}
-                    <strong className="text-slate-700">{TESTIMONIALS_DATA[currentTestimonial].company}</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/*        /!* Reviewer bio *!/*/}
+      {/*        <div className="flex items-center space-x-4 pt-8 mt-6 border-t border-slate-150">*/}
+      {/*          <img*/}
+      {/*            referrerPolicy="no-referrer"*/}
+      {/*            className="w-12 h-12 rounded-full object-cover border border-slate-200"*/}
+      {/*            src={TESTIMONIALS_DATA[currentTestimonial].image}*/}
+      {/*            alt={TESTIMONIALS_DATA[currentTestimonial].name}*/}
+      {/*          />*/}
+      {/*          <div>*/}
+      {/*            <h4 className="font-display font-bold text-sm text-slate-900">*/}
+      {/*              {TESTIMONIALS_DATA[currentTestimonial].name}*/}
+      {/*            </h4>*/}
+      {/*            <p className="text-xs text-slate-500 font-sans">*/}
+      {/*              {TESTIMONIALS_DATA[currentTestimonial].role} at{' '}*/}
+      {/*              <strong className="text-slate-700">{TESTIMONIALS_DATA[currentTestimonial].company}</strong>*/}
+      {/*            </p>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
 
-            {/* Slider Switch controls */}
-            <div className="absolute right-4 bottom-4 sm:right-8 sm:bottom-8 flex items-center space-x-2">
-              <button
-                id="testimonial-prev-trigger"
-                onClick={handlePrevTestimonial}
-                className="w-10 h-10 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center transition-colors focus:outline-none cursor-pointer"
-                aria-label="Previous Testimonial"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                id="testimonial-next-trigger"
-                onClick={handleNextTestimonial}
-                className="w-10 h-10 rounded-xl bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer"
-                aria-label="Next Testimonial"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*      /!* Slider Switch controls *!/*/}
+      {/*      <div className="absolute right-4 bottom-4 sm:right-8 sm:bottom-8 flex items-center space-x-2">*/}
+      {/*        <button*/}
+      {/*          id="testimonial-prev-trigger"*/}
+      {/*          onClick={handlePrevTestimonial}*/}
+      {/*          className="w-10 h-10 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center transition-colors focus:outline-none cursor-pointer"*/}
+      {/*          aria-label="Previous Testimonial"*/}
+      {/*        >*/}
+      {/*          <ChevronLeft className="w-5 h-5" />*/}
+      {/*        </button>*/}
+      {/*        <button*/}
+      {/*          id="testimonial-next-trigger"*/}
+      {/*          onClick={handleNextTestimonial}*/}
+      {/*          className="w-10 h-10 rounded-xl bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer"*/}
+      {/*          aria-label="Next Testimonial"*/}
+      {/*        >*/}
+      {/*          <ChevronRight className="w-5 h-5" />*/}
+      {/*        </button>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* SECTION 7: PORTFOLIO HIGHLIGHT (Slight grid showing 3 items) */}
       <section id="portfolio-home-preview" className="py-24 bg-slate-50/60 relative">
@@ -638,13 +638,13 @@ export default function Home() {
               <span>Get Free Quotation</span>
               <ArrowRight className="w-5 h-5 text-accent-200" />
             </Link>
-            <Link
-              id="cta-bottom-team"
-              to="/careers"
-              className="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-750 text-white font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 shadow-sm pointer-events-auto cursor-pointer"
-            >
-              <span>Join As Engineer</span>
-            </Link>
+            {/*<Link*/}
+            {/*  id="cta-bottom-team"*/}
+            {/*  to="/careers"*/}
+            {/*  className="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-750 text-white font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 shadow-sm pointer-events-auto cursor-pointer"*/}
+            {/*>*/}
+            {/*  <span>Join As Engineer</span>*/}
+            {/*</Link>*/}
           </div>
         </div>
       </section>

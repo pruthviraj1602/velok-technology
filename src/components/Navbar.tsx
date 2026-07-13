@@ -147,7 +147,7 @@ export default function Navbar() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary-500 to-accent-500 flex items-center justify-center text-white">
                     <Code2 className="w-4 h-4" />
                   </div>
-                  <span className="font-display font-medium text-lg leading-none">Code Crafters</span>
+                  <span className="font-display font-medium text-lg leading-none">Velok Technology</span>
                 </div>
                 <button
                   id="mobile-drawer-close"
@@ -190,7 +190,7 @@ export default function Navbar() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <div className="mt-4 text-center text-xs text-gray-400 font-mono">
-                  © 2026 Code Crafters Services
+                  © 2026 Velock Technology
                 </div>
               </div>
             </motion.div>
